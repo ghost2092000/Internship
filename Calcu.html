@@ -2,8 +2,13 @@
 <!-- This just center content inside box -->
 <html>
 
+
+
     <head>
         <link rel="stylesheet" href="calcu.css">
+
+         <!--You need the link-->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
 
     <body>
@@ -11,31 +16,162 @@
 
         <div id="enableFlex"> <!--Parent-->
 
-            <div id = "card"> <!--Card-->
+            <div id = "card"> <!--Card-->  <!--Green-->
 
-                <form id = "flx">
-                    <p></p>
-                    <div>
 
-                    <div>
-                    <label>Email</label>
+                   
+
+                
+
+
+
+            <!--Need both containers-->
+                <div class = "container-fluid " id = ""> <!--container fluid-->
+         
+ 
+                 <div class= "container-fluid cc" id = "rowsection"> <!--Start-->
+ 
+                    <div class = "col-md-12 blue-box black ">   
+                        <p id = "display" >0</p>
+                     </div>
+                     
+                 </div> <!--End-->
+ 
+ 
+ 
+                 <div class= "container-fluid cc " id = "rowsection"> <!--Start-->
+ 
+                    <div class = "col-md-3 cc blue-box">   
+                        <button id = "operator" onclick="plusFun()"> + </button>
+                     </div>
+                   
+                    <div class = "col-md-3 cc blue-box">
+                        <button id = "operator" onclick="minusFun()"> - </button>
+                     </div>
+
+                    <div class = "col-md-3 cc blue-box">
+                        <button id = "operator" onclick="mulFun()"> * </button>
                     </div>
-                    <input type = "text">
 
-                    <label>Password</label>
-                    <input type = "password">
+                    <div class = "col-md-3 cc blue-box">
+                        <button id = "operator" onclick="divFun()"> / </button>
+                    </div>
+                
+                </div> <!--End-->
 
-                    <button type = "button">Submit</button>
 
+
+                <div class= "container-fluid cc " id = "rowsection"> <!--Start-->
+
+                    <div class = "col-md-4 blue-box">   
+                        <button id = "num" onclick="oneFun()">1</button>
+                    </div>
+       
+                    <div class = "col-md-4 blue-box">
+                        <button id = "num" onclick="twoFun()">2</button>
                     </div>
 
-                </form>
+                    <div class = "col-md-4 blue-box">
+                        <button id = "num" onclick="threeFun()">3</button>
+                    </div>
+                    
+                </div> <!--End-->
+ 
 
-            </div> <!--End of card-->
+                <div class= "container-fluid cc " id = "rowsection"> <!--Start-->
+ 
+                    <div class = "col-md-4 blue-box"> 
+                        <button id = "num" onclick="fourFun()">4</button>  
+                    </div>
+           
+                    <div class = "col-md-4 blue-box">
+                        <button id = "num" onclick="fiveFun()">5</button>
+                    </div>
 
-        </div> <!--End of Parent-->
+                    <div class = "col-md-4 blue-box">
+                        <button id = "num" onclick="sixFun()">6</button>
+                    </div>
+                        
+                </div> <!--End-->
+
+
+                <div class= "container-fluid cc " id = "rowsection"> <!--Start-->
+ 
+                    <div class = "col-md-4 blue-box"> 
+                        <button id = "num" onclick="sevenFun()">7</button>
+                    </div>
+           
+                    <div class = "col-md-4 blue-box">
+                        <button id = "num" onclick="eightFun()">8</button>
+                    </div>
+
+                    <div class = "col-md-4 blue-box">
+                        <button id = "num" onclick="nineFun()">9</button>
+                    </div>
+                 
+                </div> <!--End-->
+
+
+                <div class= "container-fluid cc " id = "rowsection"> <!--Start-->
+ 
+                    <div class = "col-md-12 blue-box">   
+                        <button id = "num" onclick="zeroFun()">0</button>
+                    </div>
+                 
+                </div> <!--End-->
+
+
+                <div class= "container-fluid cc " id = "rowsection"> <!--Start-->
+ 
+                    <div class = "col-md-12 blue-box">   
+                        <button id = "equals" onclick="equalsFun()"> = </button>
+                    </div>
+                 
+                </div> <!--End-->
+
+
+                <div class= "container-fluid cc " id = "rowsection"> <!--Start-->
+ 
+                    <div class = "col-md-4 blue-box"> 
+                        <button id = "backspace" onclick="backspaceFun()">backspace</button>
+                    </div>
+           
+                    <div class = "col-md-4 blue-box">
+                        <button id = "decimal" onclick="decimalFun()"> . </button>
+                    </div>
+
+                    <div class = "col-md-4 blue-box">
+                        <button id = "clear" onclick="clearFun()"> C </button>
+                    </div>
+                   
+ 
+                 
+                </div> <!--End-->
+ 
+ 
+ 
+            </div> <!--End of container fluid-->
+
+
+
+
+
+
+
+
+
 
         
+
+
+
+        </div> <!--End of Parent-->
+                <script src = "calcu.js"></script>
+                <!--You need the 3 script files-->
+                <!--For bootstrap-->
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 
 

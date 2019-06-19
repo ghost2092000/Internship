@@ -13,27 +13,22 @@ body{
     justify-content: center;
 }
 
+.cc{
+    border: 1px solid gray;
 
-form{
-    
-    /* border: 1px solid rgb(241, 39, 106); */
-
-
-    border: 1px solid goldenrod;
-    /* FlexBox */
-    display: flex;
-    padding: 5px;
-
-    margin: 2px;
-
-
-
+     /* FlexBox */
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 
+
+
 #card{
-    border: 1px solid greenyellow;
+    border: 1px solid rgb(72, 117, 5);
+    background-color: gray;
     height: 80vh;
-    width: 80vw;
+    width: 30vw;
    
 
     display: flex;
@@ -42,35 +37,82 @@ form{
 
 }
 
-#card label{
-font-size: 24px;
-}
-
-#card input{
-    border: 1px solid blue;
-    border-radius: 4px;
-    display:block;
-    height: 42px;
-    width: 99%;
-    margin-bottom: 50px;
-}
-
-#card h1{
-    text-align: center;
-}
 
 #card button {
     display: block;
-    background-color: aqua;
+    background-color: rgb(3, 245, 144);
     color: black;
-    border: 1px solid aqua;
-    border-radius: 100px;
-    width: 50%;
-
+    border: 1px solid rgb(3, 245, 144);
+    border-radius: 80px;
     margin: 0 auto; /* so button is in the middle */
     
 }
 
-#flx{
-    border: 1px solid hotpink;
+
+
+
+
+
+.blue-box{
+    border: 2px solid gray;
+    background: gray;
+
+}
+
+
+.row{
+    border: 2px solid brown;    
+}
+
+#color{
+    border: 2px solid orangered;
+    width: 500px;
+    height: 500px;
+
+}
+
+
+
+
+#operator{
+    width:70px;
+}
+
+#card #num {
+    width: 80px;
+    background-color: rgba(0, 190, 223, 0.87);
+    border: 1px solid rgba(0, 190, 223, 0.87);
+}
+
+
+
+
+#card #equals{
+    width: 250px;
+    background-color: rgb(255, 255, 0);
+    border: 1px solid rgba(255, 255, 0);
+}
+
+#decimal{
+    width: 50px;
+}
+
+#clear{
+    width: 100px;
+}
+
+p{
+    text-align: right;
+    font-size: 25px;
+    color: white;
+}
+
+#display {
+    background-color: black;
+}
+
+.black{
+    border:1px solid red ;
+    margin: 5px;
+    background-color: black;
 }
