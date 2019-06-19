@@ -70,3 +70,7 @@ font-size: 24px;
     margin: 0 auto; /* so button is in the middle */
     
 }
+
+#flx{
+    border: 1px solid hotpink;
+}
